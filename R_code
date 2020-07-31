@@ -64,7 +64,7 @@ kl.div = function(true.dist,approx.dist)
 
 ###### Density Functions ########
 
-### Scaled-Beta [with support (-1,1)]
+### Scaled-Beta [Beta with support (-1,1)]
 
 scaledBeta = function(x, a, b, log=FALSE)
 {
@@ -102,8 +102,6 @@ partition = function(mat, support, nPart, position){
 		}
 	return(cbind(m.pos, m.vec))
 	}
-
-###Others
 
 vandermonde.matrix = function(x.pts, degree){
 	x = x.pts; y = 0:degree
